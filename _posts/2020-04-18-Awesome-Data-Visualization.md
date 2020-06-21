@@ -298,7 +298,7 @@ plt.title("Count of items by its category", y=1.02);
 ```
 
 
-![png]({{ "/assets/images/output_7_0.png"}})
+![png]({{ "/assets/images/output_7_0.png" | absolute_url }})
 
 
 
@@ -344,11 +344,11 @@ sns.kdeplot(menu['Calories'], ax=ax1, shade=True, color='steelblue')
 
 
 
-![png]({{ "/assets/images/output_10_1.png"}})
+![png]({{ "/assets/images/output_10_1.png" | absolute_url }})
 
 
 
-![png]({{ "/assets/images/output_10_2.png"}})
+![png]({{ "/assets/images/output_10_2.png" | absolute_url }})
 
 
 
@@ -390,7 +390,7 @@ plt.show()
 ```
 
 
-![png]({{ "/assets/images/output_15_0.png"}})
+![png]({{ "/assets/images/output_15_0.png" | absolute_url }})
 
 
 
@@ -411,7 +411,7 @@ menu.pivot_table('Trans Fat', 'Category').plot(kind='bar', stacked=True, color =
 
 
 
-![png]({{ "/assets/images/output_17_1.png"}})
+![png]({{ "/assets/images/output_17_1.png" | absolute_url }})
 
 
 
@@ -435,7 +435,7 @@ plt.show()
 ```
 
 
-![png]({{ "/assets/images/output_19_0.png"}})
+![png]({{ "/assets/images/output_19_0.png" | absolute_url }})
 
 
 
@@ -447,7 +447,7 @@ hm = sns.heatmap(cm,cbar = True, annot = True,square = True, fmt = '.2f', annot_
 ```
 
 
-![png]({{ "/assets/images/output_20_0.png"}})
+![png]({{ "/assets/images/output_20_0.png" | absolute_url }})
 
 
 
@@ -474,7 +474,7 @@ def plot(grouped):
 ```
 
 
-![png]({{ "/assets/images/output_23_0.png"}})
+![png]({{ "/assets/images/output_23_0.png" | absolute_url }})
 
 
 
@@ -488,7 +488,7 @@ protein = menu.groupby(menu["Protein"])
 plot(protein)
 ```
 
-![png]({{ "/assets/images/output_25_0.png"}})
+![png]({{ "/assets/images/output_25_0.png" | absolute_url }})
 
 
 
@@ -502,7 +502,7 @@ Cholesterol = menu.groupby(menu["Cholesterol"])
 plot(Cholesterol)
 ```
 
-![png]({{ "/assets/images/output_27_0.png"}})
+![png]({{ "/assets/images/output_27_0.png" | absolute_url }})
 
 
 
@@ -518,7 +518,7 @@ plot(calories)
 ```
 
 
-![png]({{ "/assets/images/output_29_0.png"}})
+![png]({{ "/assets/images/output_29_0.png" | absolute_url }})
 
 
 
@@ -529,7 +529,7 @@ plot(Saturated)
 ```
 
 
-![png]({{ "/assets/images/output_30_0.png"}})
+![png]({{ "/assets/images/output_30_0.png" | absolute_url }})
 
 
 

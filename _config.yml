@@ -12,15 +12,16 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Nitay Yacobovitch"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Nitay Yacobovitch"
+description: >- # this means to ignore newlines until "baseurl:"
+  My personal website built with Jekyll & Minimal Mistakes.
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -91,56 +92,53 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name   : "Nitay Yacobovitch"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : >-
+            25 years Old.
+            Information System Management Graduate
+  location: "Israel"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://twitter.com/nitayya"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/nitayya"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/nitayya"
+    - label: "Email"
+      icon: "fa fa-envelope"
+      url: "mailto:nitayya@gmail.com"
 
-# Site Footer
 footer:
   links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://twitter.com/nitayya"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
-
-
+      url: "https://instagram.com/nitayya"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/nitayya"
+    - label: "Email"
+      fa-icon: "fa-mail-square"
+      url: "mailto:nitayya@gmail.com"
 # Reading Files
 include:
   - .htaccess

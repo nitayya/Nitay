@@ -1,12 +1,29 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "CV"
+     #url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+  #   url: 
+  #- title: "Sports"
+  #   url: 
+  # - title: 
+  #   url: 
+  # - title: 
+  #   url: 
+  
+  
+
+# DID Nav
+didnav:
+  - title: "History"
+    #url: "/history/"  
+    children:
+      - title: "• Resources & Pre-History"
+        #url: "/history/"
+      #- title: "• 2000-2009"
+        #url: "/history/2000-2009/"
+      #- title: "• 2010-2014"
+        #url: /history/2010-2014/
+      #- title: "• 2015-2019"
+        #url: /history/2015-2019/
+ 

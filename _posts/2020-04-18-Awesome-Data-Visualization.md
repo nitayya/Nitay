@@ -282,7 +282,7 @@ plt.xlabel("Values")
 
 
 
-![png]({{ "/assets/images/output_5_1.png"}})
+![png]({{ "/assets/images/output_5_1.png" | absolute_url }})
 
 
 So first we'll import some libraries that will help us later to analyze.

@@ -6,6 +6,9 @@ categories:
   - data
 ---
 
+This Post shows an analyze i did of Mcdonalds Menu. i used data on all of the dishes
+from their menu and made some analyzing and insights with python libraries.
+
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed
 # It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
@@ -534,8 +537,8 @@ plot(Saturated)
 
 
 
-Top 20 items by calories.
 
+Top 20 items by calories.
 
 
 ```python

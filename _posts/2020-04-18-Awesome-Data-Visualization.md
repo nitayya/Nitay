@@ -36,7 +36,6 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt # draw graphs in Jupyter Notebook
-from mpl_toolkits.mplot3d import Axes3D # creating a 3D axes.
 import matplotlib as mpl  # visualization library in Python for 2D plots of arrays.
 import seaborn as sns #beautiful statistics and visualization
 
@@ -266,10 +265,10 @@ menu.head() # show us the top rows
 
 
 menu.hist(column=['Calories','Cholesterol','Sugars','Protein','Total Fat'],bins=20, color='steelblue', edgecolor='black', linewidth=1.0,
-           xlabelsize=8, ylabelsize=8, grid=False)
+           xlabelsize=8, ylabelsize=8, grid=False) # historam for each attribute. adjust size and colors
 plt.tight_layout(rect=(0, 0, 1.2, 1.2))
-plt.ylabel("Counter")
-plt.xlabel("Values")
+plt.ylabel("Counter") # naming the y-axis
+plt.xlabel("Values") # naming the x-axis
 
 
 ```
@@ -291,10 +290,10 @@ So first we'll import some libraries that will help us later to analyze.
 
 ```python
 sns.set(font_scale=1.4)
-menu['Category'].value_counts().plot(kind='bar', figsize=(7, 6))
-plt.xlabel("Categories", labelpad=5)
-plt.ylabel("Count of items", labelpad=5)
-plt.title("Count of items by its category", y=1.02);
+menu['Category'].value_counts().plot(kind='bar', figsize=(7, 6)) # makes plot bar for each category
+plt.xlabel("Categories", labelpad=5) # title for the x label
+plt.ylabel("Count of items", labelpad=5) # title for the y label
+plt.title("Count of items by its category", y=1.02); # title for the plot
 ```
 
 
@@ -314,26 +313,26 @@ I see that the dishes are divided into categories. Here's a look of the distribu
 
 ```python
 # Histogram
-fig = plt.figure(figsize = (6,4))
-title = fig.suptitle("Calories of each item", fontsize=14)
-fig.subplots_adjust(top=0.85, wspace=0.3)
+fig = plt.figure(figsize = (6,4)) # adjust plot for size
+title = fig.suptitle("Calories of each item", fontsize=14) # title for plot
+fig.subplots_adjust(top=0.85, wspace=0.3) # Tune the subplot layout. adjust the placing
 
-ax = fig.add_subplot(1,1, 1)
-ax.set_xlabel("Calories")
-ax.set_ylabel("Frequency")
+ax = fig.add_subplot(1,1, 1) # adds subplot to the figure
+ax.set_xlabel("Calories") # naming the x-axis
+ax.set_ylabel("Frequency") # naming the y-axis
 freq, bins, patches = ax.hist(menu['Calories'], color='steelblue', bins=30,
-                                    edgecolor='black', linewidth=1)
+                                    edgecolor='black', linewidth=1) # histogram for each category of calories
                                     
 
 # Density Plot
-fig = plt.figure(figsize = (6, 4))
-title = fig.suptitle("Calories of each item", fontsize=14)
-fig.subplots_adjust(top=0.85, wspace=0.3)
+fig = plt.figure(figsize = (6, 4)) # adjust plot for size
+title = fig.suptitle("Calories of each item", fontsize=14) # title for plot
+fig.subplots_adjust(top=0.85, wspace=0.3) # Tune the subplot layout. adjust the placing
 
-ax1 = fig.add_subplot(1,1, 1)
-ax1.set_xlabel("Calories")
-ax1.set_ylabel("Frequency")
-sns.kdeplot(menu['Calories'], ax=ax1, shade=True, color='steelblue')
+ax1 = fig.add_subplot(1,1, 1) # adds the 2nd subplot to the figure
+ax1.set_xlabel("Calories") # naming the x-axis
+ax1.set_ylabel("Frequency") # naming the y-axis
+sns.kdeplot(menu['Calories'], ax=ax1, shade=True, color='steelblue')  # Fit and plot a univariate or bivariate kernel density estimate.
 ```
 
 
@@ -363,7 +362,7 @@ We can see that most of the items contain between 250-500 calories. There's also
 
 
 ```python
-menu[menu['Calories']==menu['Calories'].max()]['Item']
+menu[menu['Calories']==menu['Calories'].max()]['Item'] # gets the highest-calorie dish
 ```
 
 
@@ -381,11 +380,11 @@ So we can see that the dish with the biggest calorie values is Chicken McNuggets
 
 
 ```python
-sugars = menu['Sugars']
-calories = menu['Calories']
-plt.scatter(calories, sugars)
-plt.xlabel('calories')
-plt.ylabel('sugars')
+sugars = menu['Sugars'] # sugars values column
+calories = menu['Calories'] # calories values column
+plt.scatter(calories, sugars) # scatter plot of calories vs sugars
+plt.xlabel('calories') # naming the x-axis
+plt.ylabel('sugars') naming the y-axis
 plt.show()
 ```
 
@@ -400,7 +399,7 @@ Here's an interesting scatter plot, which is great to display correlation betwee
 
 
 ```python
-menu.pivot_table('Trans Fat', 'Category').plot(kind='bar', stacked=True, color = 'c')
+menu.pivot_table('Trans Fat', 'Category').plot(kind='bar', stacked=True, color = 'c') # bar plot of each category and the mean of its Trans fat
 ```
 
 
@@ -423,12 +422,12 @@ Well, the dishes with the most Trans Fat are Beef & Pork and Smoothies & Shakes.
 ```python
 
 
-Protein = menu['Protein']
-Calories = menu['Calories']
-Category = menu['Category']
+Protein = menu['Protein'] # protein column
+Calories = menu['Calories'] # calories column
+Category = menu['Category'] # category column
 
-df = pd.DataFrame(dict(Calories=Calories, Protein=Protein, Category=Category))
-sns.lmplot('Calories', 'Protein', data=df, hue='Category', fit_reg=False)
+df = pd.DataFrame(dict(Calories=Calories, Protein=Protein, Category=Category)) # data frame of the 3 column
+sns.lmplot('Calories', 'Protein', data=df, hue='Category', fit_reg=False) # Plot data of Calories vs Protein, based on categories by colors
 plt.show()
 
 
@@ -440,10 +439,10 @@ plt.show()
 
 
 ```python
-cols = ['Calories','Cholesterol','Trans Fat','Sugars','Dietary Fiber']
-cm = np.corrcoef(menu[cols].values.T) # Return Pearson product-moment correlation coefficients on all the columns
-sns.set(font_scale = 1.5)
-hm = sns.heatmap(cm,cbar = True, annot = True,square = True, fmt = '.2f', annot_kws = {'size':15}, yticklabels = cols, xticklabels = cols)
+cols = ['Calories','Cholesterol','Trans Fat','Sugars','Dietary Fiber'] 
+cm = np.corrcoef(menu[cols].values.T) # Return Pearson product-moment correlation coefficients on all the columns 
+sns.set(font_scale = 1.5) # Set aesthetic parameters in one step.
+hm = sns.heatmap(cm,cbar = True, annot = True,square = True, fmt = '.2f', annot_kws = {'size':15}, yticklabels = cols, xticklabels = cols) # correlation matrix between some main values
 ```
 
 
@@ -458,7 +457,7 @@ correlation matrix between some main values. Calories has positive correlation w
 
 ```python
 def plot(grouped):
-    item = grouped["Item"].sum()
+    item = grouped["Item"].sum() # group items by names
     item_list = item.sort_index() # sort the items by sugar values
     item_list = item_list[-20:] # keeps only the 20 first items
     plt.figure(figsize=(9,10))

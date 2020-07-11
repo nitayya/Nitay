@@ -26,4 +26,3 @@ the data from many aspects and can be great tool for any manager/analyst/salesma
 
 That is my result:
 ![png]({{ "/assets/images/excel_dashboard_visualization.png" | absolute_url }})
-

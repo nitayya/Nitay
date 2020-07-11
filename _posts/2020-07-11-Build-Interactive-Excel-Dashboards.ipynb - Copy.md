@@ -25,4 +25,4 @@ With simple techniques of using Pivot tables, and charts for each pivot, we crea
 the data from many aspects and can be great tool for any manager/analyst/salesman.
 
 That is my result:
-![png]({{ "/assets/images/excel_dashboard_visualization.png" | absolute_url }})
+![PNG]({{ "/assets/images/excel_dashboard_visualization.PNG" | absolute_url }})

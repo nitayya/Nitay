@@ -25,5 +25,5 @@ With simple techniques of using Pivot tables, and charts for each pivot, we crea
 the data from many aspects and can be great tool for any manager/analyst/salesman.
 
 That is my result:
-![PNG]({{ "/assets/images/excel_dashboard_visualization.PNG" | absolute_url }})
+![PNG]({{ "/assets/images/excel_dashboard_visualization.PNG" | absolute_url }}){ width=150% height=150% }
 <img src="Nitay/assets/images/excel_dashboard_visualization.PNG" alt="drawing" width="500"/>

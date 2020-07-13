@@ -1,6 +1,6 @@
 ---
 layout: posts
-title:  "Awesome Data Visualization"
+title:  "Awesome Data Visualization - McDonlad's Menu"
 date: 2020-04-18T15:34:30-04:00
 categories:
   - data

@@ -6,8 +6,8 @@ categories:
   - data
 ---
 
-This Posts shows an analyze i did of Mcdonalds Menu - i used data on all of the dishes
-from their menu and made some analyzing and insights with python libraries.
+This post shows an analysis that i've made of Mcdonalds Menu - The data i used holds information on all of the dishes
+from their menu, on top of that i made some analyzing and provide insights with python libraries.
 
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed

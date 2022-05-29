@@ -6,7 +6,7 @@ categories:
   - data
 ---
 
-This post shows an analysis that i've made of Mcdonalds Menu - The data i used holds information on all of the dishes
+This post shows an analysis that I've made of Mcdonalds Menu - The data i used holds information on all of the dishes
 from their menu, on top of that i made some analyzing and provide insights with python libraries.
 
 ```python

@@ -6,7 +6,7 @@ categories:
   - data
 ---
 
-This post shows an analsis that I did of the solar system at my home - and its performatce. It contains the total yield 
+This post shows an analysis that I did of the solar system at my home - and its performatce. It contains the total yield 
 from the last 6 years - on top of that I made some data cleansing, showed few insights and provided graphs.
 
 ```python

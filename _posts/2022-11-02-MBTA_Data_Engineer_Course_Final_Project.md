@@ -1,10 +1,12 @@
 ---
 layout: posts
-title:  "Awesome Data Visualization - McDonlad's Menu"
-date: 2020-04-18T15:34:30-04:00
+title:  "MBTA Data Engineer Course Final Project"
+date: 2022-11-02T15:34:30-04:00
 categories:
   - data
-  - 
+---
+
+
 # MBTA Data Engineer Course_Final Project
 
 ## This Project was created as the Final Project in the Big Data Engineer course at Naya College By Nitay Yacobovitch, Shoham Gilady and Dor Izmaylov.

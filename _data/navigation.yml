@@ -2,7 +2,7 @@
 
 main:
   - title: "CV"
-    url: assets/images/CV_Nitay_Yacobovitch.pdf
+    url: /CV_Nitay_Yacobovitch.pdf
   - title: "About"
     #url: 
   - title: "Sports"

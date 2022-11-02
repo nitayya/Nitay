@@ -1,12 +1,12 @@
 ---
 layout: posts
-title:  "Solar System Analysis"
+title:  "MBTA Data Engineer Course Final Project"
 date: 2020-07-16T15:34:30-04:00
 categories:
   - data
 ---
 
-# MBTA Data Engineer Course_Final Project
+# MBTA Data Engineer Course Final Project
 
 ## This Project was created as the Final Project in the Big Data Engineer course at Naya College By Nitay Yacobovitch, Shoham Gilady and Dor Izmaylov.
 We used MBTA API (Massachusetts Bay Transportation Authority) and Google Maps API, and we created data pipelines - while using big data technologies that we learned in the course.

@@ -6,8 +6,6 @@ categories:
   - data
 ---
 
-# Data Engineer Course Final Project - MBTA API
-
 ## This Project was created as the Final Project in the Big Data Engineer course at Naya College By Nitay Yacobovitch, Shoham Gilady and Dor Izmaylov.
 We used MBTA API (Massachusetts Bay Transportation Authority) and Google Maps API, and we created data pipelines - while using big data technologies that we learned in the course.
 

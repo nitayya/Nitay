@@ -1,7 +1,3 @@
-
-
-
-
 ---
 layout: posts
 title:  "Solar System Analysis"

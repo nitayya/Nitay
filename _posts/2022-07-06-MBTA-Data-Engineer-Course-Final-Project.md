@@ -24,3 +24,4 @@ Our technical/technological goals were:
 ## Our architecture:
   
 ![Screenshot](architecture.png)
+![png]({{ "/assets/images/architecture.png" | absolute_url }})
